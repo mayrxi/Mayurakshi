@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 25px 60px;
+}
+
+.nav-list li a{
+    color: white;
+    text-decoration: none;  
+}
+
+.nav-list li a:hover{
+    color: gray;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 50%;
+}
+
+.fhalf{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-text{
+    font-size: 50px;
+}
+
+.small-text{
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.btn{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 20px;
+   border: solid antiquewhite;
+   border-radius: 4px;
+   font-size: 18px;
+   background-color: antiquewhite;
+   padding: 2px;
+   cursor: pointer;
+}
+
+.btn:hover{
+    color: gray;
+}
+
+.date-time{
+    font-family: sans-serif;
+}
+
+.footbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.foot-list{
+    width: 50%;
+    background-color: rgb(77, 77, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-foot{
+    width: 50%;
+    background-color: rgb(77, 77, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-list li{
+    list-style: none;
+    padding: 25px 60px;
+}
+
+.right-foot li{
+    list-style: none;
+    padding: 25px 60px;
+}
+
+.foot-list li a{
+    color: white;
+    text-decoration: none;  
+}
+
+.right-foot li a{
+    color: white;
+    text-decoration: none;  
+}
+
+.foot-list li a:hover{
+    color: black;
+}
+
+.right-foot li a:hover{
+    color: black;
+}

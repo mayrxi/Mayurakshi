@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mayurakshi</title>
+</head>
+
+<script>
+    var colors = ["red", "blue", "green"];
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("xyz");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }
+    
+</script>
+</html>
+
+
+<body id='xyz'> 
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#home"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+    </nav>
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="fhalf">
+                <h1 id="headingz" class="big-text">Heading</h1>
+                <p class="small-text">This is a smaller sample which is meant to act like the main content of the webpage which is useless
+                                        information at this moment of time
+                </p>
+
+                <div class="button">
+                    <button class="btn" onclick=alert("Welcome!")>Prompt</button>  
+                    <button class="btn" onclick="changeTitle();">Change Heading</button>
+                    <button class="btn" onclick="changeColor();">Change BG</button>
+                </div>
+
+            <div class="date-time">
+                <div id="datez">
+                </div>
+                <div id="timez">
+                </div> 
+            </div>  
+            </div>    
+        </div>
+    </section>
+
+    <Script>
+        var today = new Date();
+        var day = today.getDay();
+
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        document.querySelector("#datez").innerHTML += "Today is : " + daylist[day] + ".";
+
+        var hours = today.getHours();
+        var minutes = today.getMinutes();
+        var seconds = today.getSeconds();
+
+        var prepand = (hours >= 12) ? "PM" : "AM";
+        hours = (hours >= 12) ? hours - 12 : hours;
+
+        document.querySelector("#timez").innerHTML += "Current time is : " + hours + ":" + minutes + ":" + seconds + " " + prepand;
+
+        console.log("Current time is : " + hours + ":" + minutes + ":" + seconds + " " + prepand);
+    </Script>>
+    <script>
+        function changeTitle(element) {
+        var title = prompt("Pick a new title:");
+        document.querySelector("#headingz").innerHTML = title;
+        }
+    </script>
+    
+    <footer class= "footbar">
+        <ul class="foot-list">
+            <li><a href="#FAQ"> FAQ </a></li>
+            <li><a href="#news"> News </a></li>
+            <li><a href="#contact-Us"> Contact Us</a></li>
+        </ul>
+        <ul class="right-foot">
+            <li><a href="design"> Web design by Mayurakshi Datta </a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
